@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     tools:context=".ResultActivity">
 
     <LinearLayout
@@ -13,7 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/gradient_bg"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="48dp"
@@ -56,19 +57,42 @@
             tools:text="23.66" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvClassificacaoLabel"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="A classificação do seu IMC é:" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vgHeader">
 
-    <TextView
-        android:id="@+id/tvClassificacao"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvClassificacaoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="A classificação do seu IMC é:" />
+
+        <TextView
+            android:id="@+id/tvClassificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            tools:text="NORMAL" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTabela"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:text="NORMAL" />
-</LinearLayout>
+        android:layout_margin="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Tabela IMC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

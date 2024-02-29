@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableActivity">
+
+    <LinearLayout
+        android:id="@+id/vgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_table"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="48dp"
+            android:text="Tabela IMC"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vgHeader">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Classificação"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="IMC (KG/m²)"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Abaixo do peso" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="- 18.5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Peso ideal" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="18.5 - 24.9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Sobrepeso" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="25.0 - 29.9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Obesidade grau 1" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="30.0 - 34.9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Obesidade grau 2 (Severa)" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="35.0 - 39.9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Obesidade grau 3 (Mórbida)" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="+ 40" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
