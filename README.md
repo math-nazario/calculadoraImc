@@ -3,22 +3,23 @@ Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem de pro
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/math-nazario/calculadoraImc/assets/88516839/d34c25a4-d841-43d1-a153-9b76f8e4bc2d" width=260/> <img src="https://github.com/math-nazario/calculadoraImc/assets/88516839/a2cc8a17-a5ec-49ef-86e5-edf93cfdba03" width=260/>
+<img src="https://github.com/math-nazario/calculadoraImc/assets/88516839/464df568-845b-46ea-91b2-74073b0297bc" width=260/> <img src="https://github.com/math-nazario/calculadoraImc/assets/88516839/fee34954-4688-4f9e-a149-c4283b42e931" width=260/> <img src="https://github.com/math-nazario/calculadoraImc/assets/88516839/8b7b84a1-edee-4d4f-ac6c-0caa9109e989" width=260/>
 
 ## Tecnologias
 - Activity
 - Intent
 - Snackbar
 - ViewGroups
-	- LinearLayout
 	- ConstraintLayout
+  	- LinearLayout
+	- TableLayout
 - Views
-	- ImageView
-	- TextView
-	- EditText
 	- Button
-
-
+	- EditText
+	- ImageView
+ 	- TableRow
+	- TextView
+	
 ## License
 ```
 The MIT License (MIT)
